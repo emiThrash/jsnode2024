@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>e-commers - grupo 13</title>
+</head>
+<body> 
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logogrupo13.png" alt="Logo e-commerce">
+                </a>
+            </picture>           
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./shop.html">Shop <iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Muebles</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Jardín</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Varios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/history.html">Historias</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">Ingresar</a>
+                </li>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../shop/contact.html">Contacto</a>
+            </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./cart.html">
+                        <img class="icon-cart" src="../../img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="cart__title">Lista de compras</h1>
+        <section class="cart__header">
+            <h3 class="cart__header__title">DETALLE DE PRODUCTO</h3>
+            <h3 class="cart__header__title">CANTIDAD</h3>
+            <h3 class="cart__header__title">TOTAL</h3>
+
+        </section>
+        <section class="cart__item__container">
+            <div class="cart__item__detail" >
+                <picture>
+                    <img class="img__cart" src="../../img/articulos/cortadora.jpg" alt="">
+                </picture>
+                <div>
+                    <h3 class="cart__item__detail__name">CORTADORA DE PASTO</h3>
+                    <p class="cart__item__detail__licence">Jardín</p>
+                    <p class="cart__item__detail__price">Precio: $ 80,000</p>
+                </div>
+            </div>
+            <div>
+                <input class="cart__item__input" type="number" id="cantidad" name="cantidad" min="1" max="100" step="1" value="1" autofocus required>
+            </div>
+            <div>
+                <p>$ 80,000</p>
+            </div>
+           
+                <img class="delete_trash" src="../../img/icons/delete_trash.svg" alt="">
+            
+        </section>
+        <section class="cart__item__container">
+            <div class="cart__item__detail" >
+                <picture>
+                    <img class="img__cart" src="../../img/articulos/crayones.jpg" alt="">
+                </picture>
+                <div>
+                    <h3 class="cart__item__detail__name">CRAYONES</h3>
+                    <p class="cart__item__detail__licence">Varios</p>
+                    <p class="cart__item__detail__price">precio: $ 2,000</p>
+                </div>
+            </div>
+            <div>
+                <input class="cart__item__input" type="number" id="cantidad" name="cantidad" min="1" max="100" step="1" value="1" autofocus required>
+            </div>
+            <div>
+                <p>$ 2,000</p>
+            </div>
+            
+                <img class="delete_trash" src="../../img/icons/delete_trash.svg" alt="">
+            
+        </section>
+
+        <section class="cart__resumen container">
+            <div></div>
+            <div > 
+                <div class="cart__resumen__container-title">
+                    <h1 class="cart__resumen__title">Resumen</h1>
+                </div>          
+                
+                <div  class="cart__resumen__container">
+                    <div class="cart__resumen__detail">
+                        <p class="cart__resumen__sub-title">Cantidad de productos</p>
+                        <p class="cart__resumen__amount">2</p>
+                    </div>
+                    <div  class="cart__resumen__detail">
+                        <p class="cart__resumen__sub-title">Subtotal</p>
+                        <p class="cart__resumen__amount">$ 82,000</p>
+                    </div>
+                    <div class="cart__resumen__detail">
+                        <p class="cart__resumen__sub-title">ENVIO</p>
+                        <p class="cart__resumen__amount">$ 0,00</p>
+                    </div>
+                    <div class="cart__resumen__detail">
+                        <p class="cart__resumen__total">Total</p>
+                        <p class="cart__resumen__total-amount">$ 82,000</p>
+                    </div>
+
+                </div>
+                
+                <h1 class="button__pay">IR A PAGAR</h1>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer"><!-- INICIO FOOTER -->
+    
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">Shop</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/shop/history.html">Historias</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../admin/register.html">Registrarse</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../admin/login.html">Ingresar</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../shop/contact.html">Contacto</a></li>
+            </ul>
+            <picture>
+                <a  href="./index.html">
+                    <img class="logo-js" src="img/branding/js.png" alt="">
+                </a>
+            </picture>
+        </nav>
+        <P class="footer__copy">Todos los derechos reservados - Grupo 13 - Codo a Codo &copy;</P>
+      
+    </footer><!-- FIN FOOTER -->   
+     
+</body>
+</html>

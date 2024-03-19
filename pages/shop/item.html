@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>e-commers - grupo 13</title>
+</head>
+<body>
+    <header> <!-- INICIO HEADER -->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logogrupo13.png" alt="Logo e-commerce">
+                </a>
+            </picture>           
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./shop.html">Shop <iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Muebles</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Jardín</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Varios</a>
+                        </li>
+                    </ul>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./history.html">Historias</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="../admin/login.html">Ingresar</a>
+                    </li>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./contact.html">Contacto</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./cart.html">
+                        <img class="icon-cart" src="../../img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!-- FIN HEADER -->
+    <main>
+        <section class="container item__container">
+            <picture class="item__cover">
+                <img class="item__img--front" src="../../img/articulos/cortadora.jpg" alt="cortadora">
+                <img class="item__img--back" src="../../img/articulos/cortadora.jpg" alt="">
+            </picture>
+            <article class="item__article">
+                <p class="item__article__licence">Jardín</p>
+                <h1 class="item__article__name">Cortadora de pasto</h1>
+                <p class="item__article__text"> Cortadora manual sin motor, funciona perfecto.</p>
+                <p class="item__article__price">$ 80,000</p>
+                <div>
+                    <input class="item__article__input" min="1" type="number" name="" id="">
+                    <a class="item__article__add-cart" href="">Agregar al Carrito</a>
+                </div>
+                
+                <p class="item__article__promo">Donar Ahora</p>
+                
+            </article>
+
+
+        </section>
+        <section class="slider container" >
+                <h2 class="slider__title">Relacionados</h2> 
+                <ul class="slider__items">
+                    <li class="slider__item">
+                        <article class="card-item">
+                            <a  class="card-item__link" href="">
+                                <picture class="card-item__cover">
+                                    <span class="card-item__tag">Nuevo</span>
+                                    <img class="card-item__img--front" src="../../img/articulos/crayones.jpg" alt="">
+                                    <img class="card-item__img--back" src="../../img/noimagefound.jpg" alt="">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">CRAYONES</p>
+                                <h4 class="card-item__name">Varios Colores</h4>
+                                <p class="card-item__price">$ 2,000</p>
+                                <p class="card-item__promo">DONAR AHORA</p>
+                                </div>
+                           </a>  
+                        </article>
+                    </li>
+                    <li class="slider__item">
+                        <article class="card-item">
+                            <a  class="card-item__link" href="">
+                                <picture class="card-item__cover">
+                                    <span class="card-item__tag">Nuevo</span>
+                                    <img class="card-item__img--front" src="../../img/articulos/cortadora.jpg" alt="">
+                                    <img class="card-item__img--back" src="../../img/noimagefound.jpg" alt="">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">CORTADORA DE PASTO</p>
+                                <h4 class="card-item__name">Funciona sin motor</h4>
+                                <p class="card-item__price">$ 80,000</p>
+                                <p class="card-item__promo">DONAR AHORA</p>
+                                </div>
+                           </a>  
+                        </article>
+                    </li>
+                    <li class="slider__item">
+                        <article class="card-item">
+                            <a class="card-item__link"  href="">
+                                <picture class="card-item__cover">
+                                    <span class="card-item__tag">Nuevo</span>
+                                    <img class="card-item__img--front" src="../../img/articulos/escritorio.jpg" alt="">
+                                    <img class="card-item__img--back" src="../../img/noimagefound.jpg" alt="">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">ESCRITORIO</p>
+                                <h4 class="card-item__name">Antigüo en buen estado</h4>
+                                <p class="card-item__price">$ 10,000</p>
+                                <p class="card-item__promo">DONAR AHORA</p>
+                                </div>
+                           </a>  
+                        </article>
+                    </li>
+                </ul>
+    
+        </section>
+    </main>
+
+    <footer class="footer"><!-- INICIO FOOTER -->
+    
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">Shop</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/shop/history.html">Historias</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../admin/register.html">Registrarse</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../admin/login.html">Ingresar</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../shop/contact.html">Contacto</a></li>
+            </ul>
+            <picture>
+                <a  href="../../index.html">
+                    <img class="logo-js" src="../../img/branding/js.png" alt="">
+                </a>
+            </picture>
+        </nav>
+        <P class="footer__copy">Todos los derechos reservados - Grupo 13 - Codo a Codo &copy;</P>
+      
+    </footer><!-- FIN FOOTER -->   
+
+</body>
+</html>

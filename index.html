@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>e-commers - grupo 13</title>
+</head>
+<body>
+    <header> <!-- INICIO HEADER -->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="./img/branding/logogrupo13.png" alt="Logo e-commerce">
+                </a>
+            </picture>           
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop/shop.html">Shop <iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Muebles</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Jardín</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Varios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop/history.html">Historias</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/admin/login.html">Ingresar</a>
+                </li>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="./pages/shop/contact.html">Contacto</a>
+            </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./pages/shop/cart.html">
+                        <img class="icon-cart" src="./img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!-- FIN HEADER -->
+    <section class="perro">
+        <article class="perro__content container">
+            <h3 class="perro__title">Ayudanos a ayudar</h3>
+            <p class="perro__text"> ¡Juntos salvamos vidas, una pata a la vez!</p>
+            <a class="perro__link" href="./pages/shop/shop.html">SHOP</a>
+        </article>    
+    </section>
+    <main class="main-container"> <!-- INICIO MAIN -->
+
+        <section class="history container">
+            <article class="history__content" >
+                <h3 class="history__title">Oddy les agradece a todos </h3>
+                <p class="history__text"> Mira la historia de Oddy</p>
+                <a class="history__link" href="./pages/historias.html">Ver más</a>
+            </article>
+            <picture class="history__cover">
+                <img class="icon-perro" src="./img/perros/oddy.png" alt="perro1">
+            </picture>
+        </section>
+        
+        <section class="history container">
+            <article class="history__content" >
+                <h3 class="history__title">Luna y su nueva familia </h3>
+                <p class="history__text"> Conoce el proceso de recupareción</p>
+                <a class="history__link" href="./pages/historias.html">Ver más</a>
+            </article>
+            <picture class="history__cover">
+                <img class="icon-perro" src="./img/perros/luna.png" alt="perro2">
+            </picture>
+        </section>
+        <section class="history container">
+            <article class="history__content" >
+                <h3 class="history__title">Max, en espera de adopción</h3>
+                <p class="history__text"> Recuperado y con ganas de dar amor </p>
+                <a  class="history__link" href="./pages/historias.html">Ver más</a>
+            </article>
+            <picture class="history__cover">
+                <img class="icon-perro" src="./img/perros/max.png" alt="perro3">
+            </picture>
+
+        </section>
+        <section class="slider container" >
+            <h2 class="slider__title">Ultimos productos agregados</h2> 
+            <ul class="slider__items">
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a  class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="./img/articulos/cortadora.jpg" alt="">
+                                <img class="card-item__img--back" src="./img/noimagefound.jpg" alt="">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">CORTADORA DE PASTO</p>
+                                <h4 class="card-item__name">Funciona sin motor</h4>
+                                <p class="card-item__price">$ 80,000</p>
+                                <p class="card-item__promo">DONAR AHORA</p>
+                            </div>
+                       </a>  
+                    </article>
+                </li>
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a  class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="./img/articulos/crayones.jpg" alt="">
+                                <img class="card-item__img--back" src="./img/noimagefound.jpg" alt="">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">CRAYONES</p>
+                                <h4 class="card-item__name">Varios Colores</h4>
+                                <p class="card-item__price">$ 2,000</p>
+                                <p class="card-item__promo">DONAR AHORA</p>
+                            </div>
+                       </a>  
+                    </article>
+                </li>
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link"  href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="./img/articulos/escritorio.jpg" alt="">
+                                <img class="card-item__img--back" src="./img/noimagefound.jpg" alt="">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">ESCRITORIO</p>
+                                <h4 class="card-item__name">Antigüo en buen estado</h4>
+                                <p class="card-item__price">$ 10,000</p>
+                                <p class="card-item__promo">DONAR AHORA</p>
+                            </div>
+                       </a>  
+                    </article>
+                </li>
+            </ul>
+
+        </section>
+    </main><!-- FIN MAIN -->
+    <footer class="footer"><!-- INICIO FOOTER -->
+    
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">Shop</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/shop/history.html">Historias</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../admin/register.html">Registrarse</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../admin/login.html">Ingresar</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../shop/contact.html">Contacto</a></li>
+            </ul>
+            <picture>
+                <a  href="./index.html">
+                    <img class="logo-js" src="img/branding/js.png" alt="">
+                </a>
+            </picture>
+        </nav>
+        <P class="footer__copy">Todos los derechos reservados - Grupo 13 - Codo a Codo &copy;</P>
+      
+    </footer><!-- FIN FOOTER -->
+    
+</body>
+</html>
