@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>e-commers - grupo 13</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logogrupo13.png" alt="Logo e-commerce">
+                </a>
+            </picture>           
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../../index.html">VER TIENDA </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../index.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <form class="create__form" action="">
+            <h1 class="create__form__title">Agregar nuevo producto</h1>
+            <div class="create__form__container">
+                <label class="create__form__sub-title" for="">Categoría:</label>
+                <select class="create__form__select" name="" id=""></select>
+                <label class="create__form__sub-title" for="">Sub categoría:</label>
+                <select class="create__form__select" name="" id=""></select>
+            </div>
+            <div class="create__form__container">
+                <label class="create__form__sub-title" for="">Producto:</label>
+                <input class="create__form__input" type="text" name="" id="" placeholder="nombre del producto">
+            </div>
+            <div>
+                <textarea class="create__form__textarea" placeholder="Descripción del producto"></textarea>
+            </div>
+            <div class="create__form__container">
+                <label class="create__form__sub-title" for="">Fondo:</label>
+                <input class="create__form__input" type="text" name="" id="" placeholder="codigo SKU">
+                <label class="create__form__sub-title" for="">Precio:</label>
+                <input class="create__form__input" type="text" name="" id="" placeholder="Precio del Porducto">
+                <label class="create__form__sub-title" for="">Stock:</label>
+                <input class="create__form__input" type="number" min="1">
+            </div>
+            <div class="create__form__container">
+                <label class="create__form__sub-title" for="">Descuento:</label>
+                <input class="create__form__input" type="number" min="0" max="100" placeholder="0%">
+            </div>
+            <div class="create__form__container">
+                <label class="create__form__sub-title" for="">Imágenes:</label>
+                <input class="create__form__select-img" name="Elegir archivos" type="file">
+            </div>
+            <div class="create__form__button-container">
+                <button class="create__form__button" type="submit"> Agregar Producto </button>
+                <button class="create__form__button"type="reset">Limpiar</button>
+            </div>
+            
+
+        </form>
+
+        
+    </main>
+    <footer class="footer"><!-- INICIO FOOTER -->
+    
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">Shop</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/shop/history.html">Historias</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../admin/register.html">Registrarse</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../admin/login.html">Ingresar</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../shop/contact.html">Contacto</a></li>
+            </ul>
+            <picture>
+                <a  href="../../index.html">
+                    <img class="logo-js" src="../../img/branding/js.png" alt="">
+                </a>
+            </picture>
+        </nav>
+        <P class="footer__copy">Todos los derechos reservados - Grupo 13 - Codo a Codo &copy;</P>
+      
+    </footer><!-- FIN FOOTER -->     
+</body>
+</html>
