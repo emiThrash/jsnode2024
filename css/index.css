@@ -436,7 +436,9 @@ header{
 .card-item__cover{
     display: flex;
     position: relative;
+    
 }
+
 .card-item__tag{
     font-size: var(--font-xsmall);
     text-transform: uppercase;
@@ -565,7 +567,7 @@ footer{
 
 .filter__filter__checkbox input[type="checkbox"] {
     margin-right: var(--spacing-6);
-}*/
+}
 
 
 
@@ -588,6 +590,8 @@ footer{
 }
 .item__cover:hover .item__img--front {
     display: none;
+    
+    
 }
 
 
