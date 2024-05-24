@@ -51,52 +51,62 @@
 
     <div class="container-shop container">	
 
-        <!-- FILTRO DE BUSQUEDA -->
+        <!-- FILTRO DE BUSQUEDA-->
 
         <aside class="aside__container">
             <div>
                 <p class="filter__title">Buscar</p>
-                <input class="filter__input__search" type="search" name="BUSCADOR" id="" placeholder="item o categoria">
+                <input class="filter__input__search" type="search" name="BUSCADOR" id="" placeholder="Buscar productos...">
             </div>
             <div>
                 <p class="filter__title">Ordenar</p>
-                <select class="filter__input__select" name="" id="" placeholder="Mayor a menor"></select>
-            </div>     
-            <div>
-                <p class="filter__title">PRECIO</p>
-                <div class="filter__price__container">
-                    <p class="filter__text">MIN:</p> <input class="filter__input" type="number" min="1" max="100">              
-                    <p class="filter__text">MAX:</p> <input class="filter__input" type="number" min="1" max="100">
-                </div>                       
+                <select class="filter__input__select" name="" id="">
+                    <option value="">Seleccionar</option>
+                    <option value="menor">Precio: Menor a Mayor</option>
+                    <option value="mayor">Precio: Mayor a Menor</option>
+                </select>
             </div>
             <div>
-                <p class="filter__title">FILTRAR</p>
+                <p class="filter__title">Precio</p>
+                <div class="filter__price__container">
+                    <input class="filter__input" type="number" min="1" max="100" placeholder="MIN">
+                    <input class="filter__input" type="number" min="1" max="100" placeholder="MAX">
+                </div>
+            </div>
+            <div>
+                <p class="filter__title">Filtrar</p>
                 <div class="filter__filter">
                     <div class="filter__filter__checkbox">
-                        <input  type="checkbox" name="mayor" id="">
-                        <p class="filter__text">Mayor Precio</p> 
+                        <input type="checkbox" name="mayor" id="">
+                        <p class="filter__text">Mayor Precio</p>
                     </div>
                     <div class="filter__filter__checkbox">
-                        <input  type="checkbox" name="menor" id="">
-                        <p class="filter__text">Menor Precio</p> 
+                        <input type="checkbox" name="menor" id="">
+                        <p class="filter__text">Menor Precio</p>
                     </div>
                     <div class="filter__filter__checkbox">
-                        <input  type="checkbox" name="reciente" id="">
-                        <p class="filter__text">Más reciente</p> 
+                        <input type="checkbox" name="reciente" id="">
+                        <p class="filter__text">Más reciente</p>
                     </div>
                     <div class="filter__filter__checkbox">
-                        <input  type="checkbox" name="antigüo" id="">
-                        <p class="filter__text">Más antigüo</p> 
+                        <input type="checkbox" name="antiguo" id="">
+                        <p class="filter__text">Más antiguo</p>
                     </div>
                 </div>
             </div>
+        </aside>
+        
 
+
+
+
+          
             <!-- FIN FILTRO DE BUSQUEDA -->
 
         </aside>
         <main class="main-container">
             <section class="slider container" >
-                <ul class="slider__items">
+                <div class="grid-container">
                     <li >
                         <article class="card-item">
                             <a  class="card-item__link" href="item.html">
@@ -147,13 +157,8 @@
                                 </div>
                            </a>  
                         </article>
+                        
                     </li>
-                </ul>
-    
-            </section>
-
-            <section class="slider container" >
-                <ul class="slider__items">
                     <li >
                         <article class="card-item">
                             <a  class="card-item__link" href="item.html">
@@ -204,29 +209,7 @@
                                 </div>
                            </a>  
                         </article>
-                    </li>
-                </ul>
-    
-            </section>
-
-            <section class="slider container" >
-                <ul class="slider__items">
-                    <li >
-                        <article class="card-item">
-                            <a  class="card-item__link" href="item.html">
-                                <picture class="card-item__cover">
-                                    <span class="card-item__tag">Nuevo</span>
-                                    <img class="card-item__img--front" src="../../img/articulos/cortadora.jpg" alt="">
-                                    <img class="card-item__img--back" src="../../img/noimagefound.jpg" alt="">
-                                </picture>
-                                <div class="card-item__content">
-                                    <p class="card-item__licence">CORTADORA DE PASTO</p>
-                                    <h4 class="card-item__name">Funciona sin motor</h4>
-                                    <p class="card-item__price">$ 80,000</p>
-                                    <p class="card-item__promo">DONAR AHORA</p>
-                                </div>
-                           </a>  
-                        </article>
+                        
                     </li>
                     <li >
                         <article class="card-item">
@@ -261,11 +244,46 @@
                                 </div>
                            </a>  
                         </article>
+                        
                     </li>
-                </ul>
+                    <li >
+                        <article class="card-item">
+                            <a  class="card-item__link" href="">
+                                <picture class="card-item__cover">
+                                    <span class="card-item__tag">Nuevo</span>
+                                    <img class="card-item__img--front" src="../../img/articulos/crayones.jpg" alt="">
+                                    <img class="card-item__img--back" src="../../img/noimagefound.jpg" alt="">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">CRAYONES</p>
+                                    <h4 class="card-item__name">Varios Colores</h4>
+                                    <p class="card-item__price">$ 2,000</p>
+                                    <p class="card-item__promo">DONAR AHORA</p>
+                                </div>
+                           </a>  
+                        </article>
+                    </li>
+                    <li >
+                        <article class="card-item">
+                            <a class="card-item__link"  href="">
+                                <picture class="card-item__cover">
+                                    <span class="card-item__tag">Nuevo</span>
+                                    <img class="card-item__img--front" src="../../img/articulos/escritorio.jpg" alt="">
+                                    <img class="card-item__img--back" src="../../img/noimagefound.jpg" alt="">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">ESCRITORIO</p>
+                                    <h4 class="card-item__name">Antigüo en buen estado</h4>
+                                    <p class="card-item__price">$ 10,000</p>
+                                    <p class="card-item__promo">DONAR AHORA</p>
+                                </div>
+                           </a>  
+                        </article>
+                        
+                    </li>
+                </div>
     
-            </section>
-            
+            </section>         
 
         </main>
     </div>
@@ -282,14 +300,18 @@
             </ul>
             <picture>
                 <a  href="./index.html">
-                    <img class="logo-js" src="img/branding/js" alt="">
+                    <img class="logo-js" src="/img/branding/js.png" alt="">
                 </a>
             </picture>
         </nav>
         <P class="footer__copy">Todos los derechos reservados - Grupo 13 - Codo a Codo &copy;</P>
       
     </footer><!-- FIN FOOTER -->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="/js/glide.js"></script>
+    <script src="/js/item.js"></script>  
+    <script src="./app.js" ></script>
     
 </body>
 </html>
